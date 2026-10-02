@@ -28,10 +28,10 @@ import google.generativeai as genai
 # CONFIGS / CHAVES
 # ========================
 SUPABASE_URL = "https://nhrfbdrcbvbumicdweks.supabase.co"   # <- url do projeto
-SUPABASE_KEY = "REMOVED_SECRET"                              # <- anon (com policies) ou service_role
+SUPABASE_KEY = "key"                              # <- anon (com policies) ou service_role
 
-OPENAI_API_KEY = "REMOVED_SECRET"                # <- chave da OpenAI
-GEMINI_API_KEY = "REMOVED_SECRET"                # <- chave do Google Gemini 
+OPENAI_API_KEY = "Key"                # <- chave da OpenAI
+GEMINI_API_KEY = "Key"                # <- chave do Google Gemini 
 
 if not SUPABASE_URL or not SUPABASE_KEY:
     raise RuntimeError("Defina SUPABASE_URL e SUPABASE_KEY no topo do arquivo.")
