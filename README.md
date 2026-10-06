@@ -19,11 +19,6 @@ Este projeto captura áudio pelo microfone, envia para a **API da OpenAI** utili
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-pip install -r requirements.txt
-
-Se não tiver o arquivo requirements.txt, instale manualmente:
 pip install openai sounddevice soundfile numpy python-dotenv
 
 Configuração da API
