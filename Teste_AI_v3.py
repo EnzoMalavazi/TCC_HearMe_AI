@@ -16,7 +16,7 @@ class AudioCaptureApp:
         # Variáveis de controle
         self.is_listening = False
         self.audio_buffer = []  # Armazena os trechos de áudio transcritos
-        self.api_key = "REMOVED_SECRET"  # Substitua pela sua chave de API
+        self.api_key = "key"  # Substitua pela sua chave de API
         
         # Configuração da interface
         self.setup_ui()
