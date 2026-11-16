@@ -27,7 +27,7 @@ import google.generativeai as genai
 # ========================
 # CONFIGS / CHAVES
 # ========================
-SUPABASE_URL = "https://nhrfbdrcbvbumicdweks.supabase.co"   # <- url do projeto
+SUPABASE_URL = "key"   # <- url do projeto
 SUPABASE_KEY = "key"                              # <- anon (com policies) ou service_role
 
 OPENAI_API_KEY = "Key"                # <- chave da OpenAI
