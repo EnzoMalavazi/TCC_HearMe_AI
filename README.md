@@ -1,74 +1,42 @@
-# TCC_BEC
-# 🎙️ Transcrição de Áudio com Whisper Cloud (OpenAI)
+# HearMe AI — Automação de Prontuários Médicos com Inteligência Artificial
 
-Este projeto captura áudio pelo microfone, envia para a **API da OpenAI** utilizando os modelos de *speech-to-text* (`gpt-4o-transcribe` ou `gpt-4o-mini-transcribe`) e salva a transcrição em um arquivo `.txt`.
+## 📌 Sobre o projeto
 
----
+O **HearMe AI** é um projeto de Trabalho de Conclusão de Curso (TCC), desenvolvido em 2025 durante a graduação em Engenharia da Computação no Centro Universitário Senac.
+
+O projeto tem como objetivo explorar o uso da **Inteligência Artificial para automatizar o preenchimento de prontuários médicos**, reduzindo tarefas manuais e auxiliando profissionais de saúde na organização das informações durante consultas.
 
 ## 🚀 Funcionalidades
 
-- 🎤 Captura áudio do microfone (em 16 kHz).
-- ☁️ Envia para a **nuvem** (OpenAI API).
-- 📝 Exibe a transcrição no terminal.
-- 💾 Salva automaticamente em um arquivo `transcricao.txt`.
+- **Transcrição de áudio:** conversão de conversas entre médico e paciente em texto utilizando reconhecimento de fala.
+- **Processamento com IA:** utilização de modelos de linguagem para interpretar e organizar as informações transcritas.
+- **Preenchimento de prontuários:** estruturação das informações extraídas da consulta em campos específicos.
+- **Interface gráfica:** aplicação desktop para visualizar, organizar e interagir com os dados processados.
+- **Integração com banco de dados:** exploração do armazenamento de informações por meio do Supabase.
+
+## 🛠️ Tecnologias utilizadas
+
+- **Python** — Linguagem principal de desenvolvimento.
+- **OpenAI Whisper** — Transcrição de áudio em texto.
+- **Google Gemini** — Processamento e organização das informações com IA.
+- **Tkinter / CustomTkinter** — Desenvolvimento da interface gráfica.
+- **Supabase** — Integração com banco de dados.
+
+## ⚙️ Funcionamento
+
+O fluxo principal do sistema é composto por quatro etapas:
+
+1. Captura ou recebimento do áudio da consulta.
+2. Transcrição da conversa em texto.
+3. Processamento e organização das informações com Inteligência Artificial.
+4. Apresentação dos dados estruturados na interface do prontuário.
+
+## 🎓 Contexto acadêmico
+
+O HearMe AI foi desenvolvido como um protótipo acadêmico, com foco na aplicação prática de conceitos de Engenharia de Software, integração entre sistemas, processamento de áudio e Inteligência Artificial.
+
+O projeto representa uma experiência de desenvolvimento envolvendo diferentes tecnologias para a construção de uma solução voltada à área da saúde.
 
 ---
 
-## 📦 Instalação
-
-Clone o repositório e instale as dependências:
-
-```bash
-pip install openai sounddevice soundfile numpy python-dotenv
-
-Configuração da API
-
-Crie um arquivo .env na raiz do projeto.
-
-Adicione sua chave da OpenAI:
-OPENAI_API_KEY=sk-sua_chave_aqui
-Adicione sua chave da Gemini:
-GEMINI_API_KEY = <chave_Gemini>
-▶️ Uso
-
-Execute o script principal:
-
-python cloud_teste.py
-
-
-Fluxo do programa:
-
-O programa grava 8 segundos de áudio (ajustável no código).
-
-O arquivo captura.wav é salvo localmente.
-
-O áudio é enviado para a API da OpenAI.
-
-O texto transcrito é exibido no terminal.
-
-A transcrição também é salva em transcricao.txt.
-
-Iniciando gravação por 8.0s...
-Áudio salvo em: captura.wav
-Transcrevendo na nuvem...
-
-=== TRANSCRIÇÃO (idioma original) ===
-Olá, este é um teste de transcrição com o modelo Whisper via API.
-
-Transcrição salva em 'transcricao.txt'
-
-
-📂 Estrutura do Projeto
-.
-├── cloud_teste.py        # Script principal
-├── .env                  # Chave da API (não subir no GitHub!)
-├── captura.wav           # Áudio gravado
-├── transcricao.txt       # Saída da transcrição
-└── requirements.txt      # Dependências do projeto
-
-📜 Licença
-
-Este projeto é de uso acadêmico/pessoal.
-Sinta-se à vontade para modificar e adaptar conforme necessário.
-
-Exemplo de saída no terminal:
+**Projeto acadêmico — Engenharia da Computação | Centro Universitário Senac | 2025**
